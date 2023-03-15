@@ -32,7 +32,7 @@ jobs:
       - name: Get actions
         uses: actions/checkout@v3
       - name: Deploying to heroku
-        uses: CDNievas/heroku-action@v1.0 # This is the action
+        uses: akhileshns/heroku-deploy@v3.12.13 # This is the action
         with:
           heroku_email: ${{secrets.MY_EMAIL}}
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
